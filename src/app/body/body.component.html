@@ -13,18 +13,22 @@
             </div>
         </div>
         <!-- Je crée un évènement click
-        Cacher = true
+        cacher = true
         Je prends la variable cacher elle va être égal à sa négation 
         cad si cacher est vrai la négation de vrai est faux cas contraire si cacher est faux sa négation est vrai  -->
         <button (click)="cacher = !cacher" class=" btn btn-primary btn-block"> Montrer / Cacher</button>
     </div>
     <!--  Block du NgFor -->
-    <div class="col">
+    <div class="col" >
         <h1 class="text-center">*NgFor</h1>
         <hr>
         <ul class="list-group">
-            <li class="list-group-item">Cras justo odio</li>
-
+          <!-- D’abord il faut penser ce que veut répéter plusieurs fois.
+          *ngFor="let personnage of personnages
+          *ngFor est égal à la déclaration d’une variable que je crée de manière local car cette variable va exister dans toutes les itérations qui fait le cycle NgFor après of c’est pour le dire à Angular ce que viens après c’est mon array dans mon cas personnages.
+        Si je veux la position index, je mets un point-virgule pour dire que je veux quelque chose additionnel du cou je crée un variable let i = index il faut se rappeler que la position index commence par zero-->
+            <li *ngFor="let personnage of personnages; let i = index" class="list-group-item"> 
+             {{ i +1 }} - {{ personnage }} </li>
         </ul>
 
     </div>
