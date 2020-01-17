@@ -3,7 +3,8 @@
     <div class="col">
         <h1 class="text-center">*NgIf</h1>
         <hr>
-        <div class="card text-white bg-primary mb-3" style="width: 100%;">
+        <!-- ngIf: est égal une condition logique peut-être le résultat d'une fonction, d'une variable dans un composant n'importe quelque chose qui renvoie une condition logique cad vrai ou faux -->
+        <div *ngIf="cacher" class="card text-white bg-primary mb-3" style="width: 100%;">
             <div class="card-body ">
                 <!-- j'appel mon objet phrase creer dans body.component.ts -->
                 <h2 class="card-title "> {{phrase.autor}} </h2>
@@ -11,7 +12,11 @@
                 </p>
             </div>
         </div>
-        <button class=" btn btn-primary btn-block"> Montrer / Cacher</button>
+        <!-- Je crée un évènement click
+        Cacher = true
+        Je prends la variable cacher elle va être égal à sa négation 
+        cad si cacher est vrai la négation de vrai est faux cas contraire si cacher est faux sa négation est vrai  -->
+        <button (click)="cacher = !cacher" class=" btn btn-primary btn-block"> Montrer / Cacher</button>
     </div>
     <!--  Block du NgFor -->
     <div class="col">
