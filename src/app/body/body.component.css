@@ -1,0 +1,17 @@
+p {
+    text-align: justify;
+}
+
+h2 {
+    text-transform: capitalize;
+}
+
+.card-body {
+    background: rgb(41, 87, 149);
+}
+
+.btn-primary {
+    border: 2px solid rgb(41, 87, 149);
+    color: white;
+    background: rgb(41, 87, 149);
+}

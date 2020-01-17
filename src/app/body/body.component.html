@@ -1,3 +1,27 @@
-<p>
-  body works!
-</p>
+<div class="row">
+    <!-- Block du NgIf -->
+    <div class="col">
+        <h1 class="text-center">*NgIf</h1>
+        <hr>
+        <div class="card text-white bg-primary mb-3" style="width: 100%;">
+            <div class="card-body ">
+                <!-- j'appel mon objet phrase creer dans body.component.ts -->
+                <h2 class="card-title "> {{phrase.autor}} </h2>
+                <p class="card-text"> {{phrase.bio}}
+                </p>
+            </div>
+        </div>
+        <button class=" btn btn-primary btn-block"> Montrer / Cacher</button>
+    </div>
+    <!--  Block du NgFor -->
+    <div class="col">
+        <h1 class="text-center">*NgFor</h1>
+        <hr>
+        <ul class="list-group">
+            <li class="list-group-item">Cras justo odio</li>
+
+        </ul>
+
+    </div>
+
+</div>
