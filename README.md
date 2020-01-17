@@ -1,3 +1,3 @@
 # Directives
 
-Cette une petite application pour expliquer les directive NgIf et NgFor
+C'est une petite application pour expliquer les directives NgIf et NgFor
